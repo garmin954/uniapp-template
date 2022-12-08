@@ -4,7 +4,6 @@
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
-		<u-button @click="loingOut">退出登录</u-button>
 	</view>
 </template>
 
@@ -12,16 +11,14 @@
 	export default {
 		data() {
 			return {
-				title: '首页'
+				title: '消息'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-			loingOut(){
-				this.$store.dispatch('LOGOUT_STATUS')
-			}
+
 		}
 	}
 </script>

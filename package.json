@@ -34,6 +34,7 @@
     "dev:mp-qq": "cross-env NODE_ENV=development UNI_PLATFORM=mp-qq vue-cli-service uni-build --watch",
     "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
     "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "cs:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --mode test ",
     "dev:mp-xhs": "cross-env NODE_ENV=development UNI_PLATFORM=mp-xhs vue-cli-service uni-build --watch",
     "dev:quickapp-native": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-native vue-cli-service uni-build --watch",
     "dev:quickapp-webview": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-webview vue-cli-service uni-build --watch",
@@ -48,6 +49,7 @@
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
   },
   "dependencies": {
+    "@babel/runtime": "^7.20.6",
     "@dcloudio/uni-app": "^2.0.1-alpha-36920221121001",
     "@dcloudio/uni-app-plus": "^2.0.1-alpha-36920221121001",
     "@dcloudio/uni-h5": "^2.0.1-alpha-36920221121001",
@@ -70,6 +72,8 @@
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
+    "sass": "^1.56.1",
+    "uview-ui": "1.8.4",
     "vue": "^2.6.11",
     "vuex": "^3.2.0"
   },
@@ -89,10 +93,12 @@
     "@vue/cli-plugin-babel": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
     "babel-plugin-import": "^1.11.0",
+    "better-mock": "^0.3.6",
     "cross-env": "^7.0.2",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "mockjs": "^1.1.0",
     "postcss-comment": "^2.0.0",
     "vue-template-compiler": "^2.6.11"
   },

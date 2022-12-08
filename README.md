@@ -1,19 +1,27 @@
-# my-pro
+# uniapp-template
+* vuex
+* 配置了uview ui
+* .env 环境变量配置
+* 请求封装
+* 缓存封装
+* mock本地模拟数据
 
-## Project setup
+
+## 安装依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 微信开发者工具
+#### 开发
 ```
-yarn serve
+yarn dev:mp-weixin
 ```
+> 微信开发者导入新项目， 项目路径是`/dist/dev/mp-weixin`
 
-### Compiles and minifies for production
+#### 生产
 ```
-yarn build
+yarn build:mp-weixin
 ```
+> 微信开发者导入新项目， 项目路径是`/dist/build/mp-weixin`。打包发布体验版
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

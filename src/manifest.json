@@ -5,6 +5,7 @@
 	"versionName": "1.0.0",
 	"versionCode": "100",
 	"transformPx": false,
+	"lazyCodeLoading": "requiredComponents",
 	"app-plus": { /* 5+App特有相关 */
 		"usingComponents": true,
 		"splashscreen": {
@@ -54,7 +55,7 @@
 
 	},
 	"mp-weixin": { /* 微信小程序特有相关 */
-		"appid": "",
+		"appid": "wx8ee1d2607ce3dd67",
 		"setting": {
 			"urlCheck": false
 		},
